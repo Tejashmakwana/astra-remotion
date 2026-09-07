@@ -1,0 +1,24 @@
+{
+  "name": "astra-switch-remotion",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts AstraSwitch out/astra-switch.mp4 --codec h264 --crf 16 --pixel-format yuv420p",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.521",
+    "@remotion/renderer": "4.0.521",
+    "@remotion/bundler": "4.0.521",
+    "remotion": "4.0.521",
+    "react": "19.1.1",
+    "react-dom": "19.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.9",
+    "@types/react-dom": "19.1.9",
+    "typescript": "5.9.3"
+  }
+}
